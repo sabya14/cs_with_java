@@ -50,7 +50,7 @@ public class QuickUnionTest {
         Assert.assertArrayEquals(new int[]{0,1,2,8,3,5,6,7,8,9}, QuickUnion.getIds());
         QuickUnion.union(6,5);
         QuickUnion.union(9,4);
-        Assert.assertArrayEquals(new int[]{0,1,2,8,3,5,5,7,8,8}, QuickUnion.getIds());
+        Assert.assertArrayEquals(new int[]{0,1,2,8,8,5,5,7,8,8}, QuickUnion.getIds());
         assertEquals(QuickUnion.find(9,3), "Connected");
     }
 }

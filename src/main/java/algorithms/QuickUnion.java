@@ -18,12 +18,12 @@ public class QuickUnion {
     }
 
     public int root(int index) {
-        if(ids[index] == index) {
-                return index;
-            } else {
-                return root(ids[index]);
-            }
+        while (index != ids[index]) {
+            ids[index] = ids[ids[index]];
+            index = ids[index];
         }
+        return index;
+    }
     public void union(int start, int end) {
         int root_start = root(start);
         int end_root = root(end);
