@@ -9,7 +9,7 @@ public class Runner {
         EuElectricityPlug euElectricityPlug = new GermanPlug();
         EUToIndianPlugAdapter adapter = new EUToIndianPlugAdapter(euElectricityPlug);
         System.out.println(indianElectricitySocket.giveElectricity(adapter));
-    } 
+    }
 
 }
 
