@@ -1,9 +1,8 @@
 package design_patterns.adapter;
 
-public class IndianElectricitySocket {
-    public String giveElectricity(EuElectricityPlug plug) {
+class IndianElectricitySocket {
+    String giveElectricity(IndianElectricityPlug plug) {
         return plug.drawElectricity();
-
     }
 }
 
