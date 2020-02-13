@@ -1,4 +1,4 @@
-package design_patterns.creational;
+package design_patterns.creational.builder;
 
 public class Runner {
     public static void main(String[] args) {

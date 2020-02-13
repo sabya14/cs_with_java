@@ -1,14 +1,18 @@
-package design_patterns.creational;
+package design_patterns.creational.builder;
 
-class Manual {
+import lombok.Getter;
+
+@Getter
+class Car {
     private String engine;
     private String gearBox;
     private String tyres;
 
-    Manual(String engine, String gearBox, String tyres) {
+    Car(String engine, String gearBox, String tyres) {
         this.engine = engine;
         this.gearBox = gearBox;
         this.tyres = tyres;
     }
+
 }
 
